@@ -52,9 +52,14 @@ document.getElementById("btn").onclick = function roll() {
     default:
       break;
   }
-  if(num1>num2){
+  if(num1==num2){
+    document.querySelector("h1").innerHTML="Draw"
+  }else if(num1>num2){
     document.querySelector("h1").innerHTML="Player1 Wins"
   }else{
     document.querySelector("h1").innerHTML="Player2 Wins"
   }
 };
+document.getElementById("ref").onclick=function ref(){
+    location.reload();
+}
